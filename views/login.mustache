@@ -1,0 +1,15 @@
+<form action="/" method="post">
+  <h1>Login Here</h1>
+  <h5>Need a hint?</h5>
+  <h6>Your username and password are 8 to 25 characters. Numbers and Letters only</h6>
+  <input type="text" name="username" placeholder="Username">
+  <input type="password" name="password" placeholder="Password">
+  <button type="submit" name="button">Submit</button>
+</form>
+
+{{#errors}}
+  {{.}}<br>
+{{/errors}}
+{{^errors}}
+  No Errors!
+{{/errors}}
